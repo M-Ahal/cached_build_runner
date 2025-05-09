@@ -1,3 +1,4 @@
+// dart format width=80
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
@@ -9,301 +10,111 @@ part of 'freezed_union.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$FreezedUnion {
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() home,
-    required TResult Function(User user) user,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? home,
-    TResult? Function(User user)? user,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? home,
-    TResult Function(User user)? user,
-    required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(Home value) home,
-    required TResult Function(UserUnion value) user,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(Home value)? home,
-    TResult? Function(UserUnion value)? user,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(Home value)? home,
-    TResult Function(UserUnion value)? user,
-    required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $FreezedUnionCopyWith<$Res> {
-  factory $FreezedUnionCopyWith(
-          FreezedUnion value, $Res Function(FreezedUnion) then) =
-      _$FreezedUnionCopyWithImpl<$Res, FreezedUnion>;
-}
-
-/// @nodoc
-class _$FreezedUnionCopyWithImpl<$Res, $Val extends FreezedUnion>
-    implements $FreezedUnionCopyWith<$Res> {
-  _$FreezedUnionCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-}
-
-/// @nodoc
-abstract class _$$HomeImplCopyWith<$Res> {
-  factory _$$HomeImplCopyWith(
-          _$HomeImpl value, $Res Function(_$HomeImpl) then) =
-      __$$HomeImplCopyWithImpl<$Res>;
-}
-
-/// @nodoc
-class __$$HomeImplCopyWithImpl<$Res>
-    extends _$FreezedUnionCopyWithImpl<$Res, _$HomeImpl>
-    implements _$$HomeImplCopyWith<$Res> {
-  __$$HomeImplCopyWithImpl(_$HomeImpl _value, $Res Function(_$HomeImpl) _then)
-      : super(_value, _then);
-}
-
-/// @nodoc
-
-class _$HomeImpl implements Home {
-  const _$HomeImpl();
-
-  @override
-  String toString() {
-    return 'FreezedUnion.home()';
-  }
-
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$HomeImpl);
+        (other.runtimeType == runtimeType && other is FreezedUnion);
   }
 
   @override
   int get hashCode => runtimeType.hashCode;
 
   @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() home,
-    required TResult Function(User user) user,
-  }) {
-    return home();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? home,
-    TResult? Function(User user)? user,
-  }) {
-    return home?.call();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? home,
-    TResult Function(User user)? user,
-    required TResult orElse(),
-  }) {
-    if (home != null) {
-      return home();
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(Home value) home,
-    required TResult Function(UserUnion value) user,
-  }) {
-    return home(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(Home value)? home,
-    TResult? Function(UserUnion value)? user,
-  }) {
-    return home?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(Home value)? home,
-    TResult Function(UserUnion value)? user,
-    required TResult orElse(),
-  }) {
-    if (home != null) {
-      return home(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class Home implements FreezedUnion {
-  const factory Home() = _$HomeImpl;
-}
-
-/// @nodoc
-abstract class _$$UserUnionImplCopyWith<$Res> {
-  factory _$$UserUnionImplCopyWith(
-          _$UserUnionImpl value, $Res Function(_$UserUnionImpl) then) =
-      __$$UserUnionImplCopyWithImpl<$Res>;
-  @useResult
-  $Res call({User user});
-}
-
-/// @nodoc
-class __$$UserUnionImplCopyWithImpl<$Res>
-    extends _$FreezedUnionCopyWithImpl<$Res, _$UserUnionImpl>
-    implements _$$UserUnionImplCopyWith<$Res> {
-  __$$UserUnionImplCopyWithImpl(
-      _$UserUnionImpl _value, $Res Function(_$UserUnionImpl) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? user = null,
-  }) {
-    return _then(_$UserUnionImpl(
-      null == user
-          ? _value.user
-          : user // ignore: cast_nullable_to_non_nullable
-              as User,
-    ));
+  String toString() {
+    return 'FreezedUnion()';
   }
 }
 
 /// @nodoc
+class $FreezedUnionCopyWith<$Res> {
+  $FreezedUnionCopyWith(FreezedUnion _, $Res Function(FreezedUnion) __);
+}
 
-class _$UserUnionImpl implements UserUnion {
-  const _$UserUnionImpl(this.user);
+/// @nodoc
+
+class Home implements FreezedUnion {
+  const Home();
 
   @override
-  final User user;
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is Home);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
 
   @override
   String toString() {
-    return 'FreezedUnion.user(user: $user)';
+    return 'FreezedUnion.home()';
   }
+}
+
+/// @nodoc
+
+class UserUnion implements FreezedUnion {
+  const UserUnion(this.user);
+
+  final User user;
+
+  /// Create a copy of FreezedUnion
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  $UserUnionCopyWith<UserUnion> get copyWith =>
+      _$UserUnionCopyWithImpl<UserUnion>(this, _$identity);
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$UserUnionImpl &&
+            other is UserUnion &&
             (identical(other.user, user) || other.user == user));
   }
 
   @override
   int get hashCode => Object.hash(runtimeType, user);
 
-  @JsonKey(ignore: true)
   @override
+  String toString() {
+    return 'FreezedUnion.user(user: $user)';
+  }
+}
+
+/// @nodoc
+abstract mixin class $UserUnionCopyWith<$Res>
+    implements $FreezedUnionCopyWith<$Res> {
+  factory $UserUnionCopyWith(UserUnion value, $Res Function(UserUnion) _then) =
+      _$UserUnionCopyWithImpl;
+  @useResult
+  $Res call({User user});
+}
+
+/// @nodoc
+class _$UserUnionCopyWithImpl<$Res> implements $UserUnionCopyWith<$Res> {
+  _$UserUnionCopyWithImpl(this._self, this._then);
+
+  final UserUnion _self;
+  final $Res Function(UserUnion) _then;
+
+  /// Create a copy of FreezedUnion
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
-  _$$UserUnionImplCopyWith<_$UserUnionImpl> get copyWith =>
-      __$$UserUnionImplCopyWithImpl<_$UserUnionImpl>(this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() home,
-    required TResult Function(User user) user,
+  $Res call({
+    Object? user = null,
   }) {
-    return user(this.user);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? home,
-    TResult? Function(User user)? user,
-  }) {
-    return user?.call(this.user);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? home,
-    TResult Function(User user)? user,
-    required TResult orElse(),
-  }) {
-    if (user != null) {
-      return user(this.user);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(Home value) home,
-    required TResult Function(UserUnion value) user,
-  }) {
-    return user(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(Home value)? home,
-    TResult? Function(UserUnion value)? user,
-  }) {
-    return user?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(Home value)? home,
-    TResult Function(UserUnion value)? user,
-    required TResult orElse(),
-  }) {
-    if (user != null) {
-      return user(this);
-    }
-    return orElse();
+    return _then(UserUnion(
+      null == user
+          ? _self.user
+          : user // ignore: cast_nullable_to_non_nullable
+              as User,
+    ));
   }
 }
 
-abstract class UserUnion implements FreezedUnion {
-  const factory UserUnion(final User user) = _$UserUnionImpl;
-
-  User get user;
-  @JsonKey(ignore: true)
-  _$$UserUnionImplCopyWith<_$UserUnionImpl> get copyWith =>
-      throw _privateConstructorUsedError;
-}
+// dart format on
